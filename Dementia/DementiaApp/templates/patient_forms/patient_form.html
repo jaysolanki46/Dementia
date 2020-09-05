@@ -6,8 +6,406 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patient Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
-    <h1>Patient Form</h1>
+    <div class="container">
+        <div class="col-md-10 offset-md-1 mt-5">
+            <div class="jumbotron bg-dark text-white">
+              <h1 class="display-4">Patient Questions</h1>
+              <p class="lead font-italic"></p>
+
+
+              <div class="form-row">
+                <div class="col-6">
+                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full name">
+                </div>
+                <div class="col-6">
+                        <select class="form-control" id="age">
+                            <option>60-65</option>
+                              <option>66-70</option>
+                              <option>71-75</option>
+                              <option>76-80</option>
+                              <option>81-85</option>
+                            <option>81-85</option>
+                            <option>86-90</option>
+                            <option>91-95</option>
+                            <option>96-100</option>
+                        </select>
+                </div>
+              </div>
+                <hr class="bg-secondary"/>
+                <div class="container">
+
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q1">Forgetting dates for an appointments?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q1r1" name="q1" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q1r2" name="q1" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q1r3" name="q1" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q1r4" name="q1" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q2">Time of breakfast/dinner?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q2r1" name="q2" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q2r2" name="q2" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q2r3" name="q2" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q2r4" name="q2" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                 <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q3">Loosing address of friends house?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q3r1" name="q3" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q3r2" name="q3" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q3r3" name="q3" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q3r4" name="q3" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q4">Forgetting where he/she put something?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q4r1" name="q4" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q4r2" name="q4" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q4r3" name="q4" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q4r4" name="q4" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q5">Forgetting what someone just told him/her?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q5r1" name="q5" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q5r2" name="q5" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q5r3" name="q5" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q5r4" name="q5" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q6">Forgetting his/her telephone number?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q6r1" name="q6" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q6r2" name="q6" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q6r3" name="q6" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q6r4" name="q6" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q7">Forgetting where things usually kept?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q7r1" name="q7" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q7r2" name="q7" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q7r3" name="q7" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q7r4" name="q7" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                 <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q8">Hard to recognise know people face?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q8r1" name="q8" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q8r2" name="q8" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q8r3" name="q8" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q8r4" name="q8" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                <hr class="bg-secondary"/>
+                    <div class="form-group">
+                        <i class="fab fa-quora"></i>
+                        <label for="q9">Forgetting year,month and day?</label>
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q9r1" name="q9" value="0" checked/>
+                              <label class="form-check-label">
+                                No
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q9r2" name="q9" value="0.25">
+                              <label class="form-check-label">
+                                May be
+                              </label>
+                             </div>
+                        </div>
+
+                         <div class="form-inline">
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q9r3" name="q9" value="0.50"/>
+                              <label class="form-check-label">
+                                Some how
+                              </label>
+                             </div>
+                             <div class="form-inline col-4">
+                              <input class="form-check-input" type="radio" id="q9r4" name="q9" value="1">
+                              <label class="form-check-label">
+                                Yes
+                              </label>
+                             </div>
+                        </div>
+                    </div>
+
+                <hr class="bg-secondary"/>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="result()">Result</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<script>
+function result() {
+
+    if(document.getElementById("fullName").value.length == 0) {
+            swal("Invalid Full Name!");
+    } else {
+
+        var fullName = document.getElementById("fullName").value;
+        var q1 =Number($('input:radio[name=q1]:checked').val());
+        var q2 =Number($('input:radio[name=q2]:checked').val());
+        var q3 =Number($('input:radio[name=q3]:checked').val());
+        var q4 =Number($('input:radio[name=q4]:checked').val());
+        var q5 =Number($('input:radio[name=q5]:checked').val());
+        var q6 =Number($('input:radio[name=q6]:checked').val());
+        var q7 =Number($('input:radio[name=q7]:checked').val());
+        var q8 =Number($('input:radio[name=q8]:checked').val());
+        var q9 =Number($('input:radio[name=q9]:checked').val());
+
+        var result = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9;
+
+        if(result > 4) {
+            swal({
+              title: "Dementia!",
+              text: "Do not worry, you'll be fine!",
+              icon: "error",
+              button: "Aww!",
+            });
+        } else {
+            swal({
+              title: "Congratulations! " + fullName,
+              text: "You have no dementia!",
+              icon: "success",
+              button: "Aww yiss!",
+            });
+        }
+
+    }
+}
+</script>
