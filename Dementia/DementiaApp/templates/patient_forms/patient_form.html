@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,24 +7,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Patient Form</title>
+    <title>Welcome Dementia!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <style>
+    body {
+      background-image: url('https://i.pinimg.com/originals/89/e7/ba/89e7baf8b8c3c816b6f6a542898ec6f6.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="col-md-10 offset-md-1 mt-5">
-            <div class="jumbotron bg-dark text-white">
-              <h1 class="display-4">Patient Questions</h1>
-              <p class="lead font-italic"></p>
+        <div class="col-md-8 offset-md-6 mt-5">
+            <div class="jumbotron text-white" style="background-color: #1e2b57;">
+              <center><h1 class="display-4">Dementia</h1></center>
 
 
               <div class="form-row">
-                <div class="col-6">
-                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full name">
+                <div class="col-4">
+                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Name">
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                         <select class="form-control" id="age">
+                            <option selected>Age</option>
                             <option>60-65</option>
                               <option>66-70</option>
                               <option>71-75</option>
@@ -34,10 +45,19 @@
                             <option>96-100</option>
                         </select>
                 </div>
+                  <div class="col-4">
+                        <select class="form-control" id="gender">
+                            <option selected>Gender</option>
+                            <option>Male</option>
+                              <option>Female</option>
+                              <option>Other</option>
+                        </select>
+                </div>
               </div>
                 <hr class="bg-secondary"/>
                 <div class="container">
 
+                    <!-- Q1  start -->
                     <div class="form-group">
                         <i class="fab fa-quora"></i>
                         <label for="q1">Forgetting dates for an appointments?</label>
@@ -71,11 +91,14 @@
                              </div>
                         </div>
                     </div>
+                <!-- Q1 ends -->
 
+                <!-- Horizontol Line -->
                 <hr class="bg-secondary"/>
+
                     <div class="form-group">
                         <i class="fab fa-quora"></i>
-                        <label for="q2">Time of breakfast/dinner?</label>
+                        <label for="q2">Time of Breakfast/Dinner?</label>
                          <div class="form-inline">
                              <div class="form-inline col-4">
                               <input class="form-check-input" type="radio" id="q2r1" name="q2" value="0" checked/>
@@ -110,7 +133,7 @@
                  <hr class="bg-secondary"/>
                     <div class="form-group">
                         <i class="fab fa-quora"></i>
-                        <label for="q3">Loosing address of friends house?</label>
+                        <label for="q3">Loosing Address of Friend's house?</label>
                          <div class="form-inline">
                              <div class="form-inline col-4">
                               <input class="form-check-input" type="radio" id="q3r1" name="q3" value="0" checked/>
@@ -215,7 +238,7 @@
                 <hr class="bg-secondary"/>
                     <div class="form-group">
                         <i class="fab fa-quora"></i>
-                        <label for="q6">Forgetting his/her telephone number?</label>
+                        <label for="q6">Forgetting his/her Telephone Number?</label>
                          <div class="form-inline">
                              <div class="form-inline col-4">
                               <input class="form-check-input" type="radio" id="q6r1" name="q6" value="0" checked/>
@@ -250,7 +273,7 @@
                 <hr class="bg-secondary"/>
                     <div class="form-group">
                         <i class="fab fa-quora"></i>
-                        <label for="q7">Forgetting where things usually kept?</label>
+                        <label for="q7">Forgetting Where things usually kept?</label>
                          <div class="form-inline">
                              <div class="form-inline col-4">
                               <input class="form-check-input" type="radio" id="q7r1" name="q7" value="0" checked/>
@@ -285,7 +308,7 @@
                  <hr class="bg-secondary"/>
                     <div class="form-group">
                         <i class="fab fa-quora"></i>
-                        <label for="q8">Hard to recognise know people face?</label>
+                        <label for="q8">Hard to recognise known people face?</label>
                          <div class="form-inline">
                              <div class="form-inline col-4">
                               <input class="form-check-input" type="radio" id="q8r1" name="q8" value="0" checked/>
@@ -320,7 +343,7 @@
                 <hr class="bg-secondary"/>
                     <div class="form-group">
                         <i class="fab fa-quora"></i>
-                        <label for="q9">Forgetting year,month and day?</label>
+                        <label for="q9">Forgetting Year,Month and Day?</label>
                          <div class="form-inline">
                              <div class="form-inline col-4">
                               <input class="form-check-input" type="radio" id="q9r1" name="q9" value="0" checked/>
@@ -378,31 +401,31 @@ function result() {
     } else {
 
         var fullName = document.getElementById("fullName").value;
-        var q1 =Number($('input:radio[name=q1]:checked').val());
-        var q2 =Number($('input:radio[name=q2]:checked').val());
-        var q3 =Number($('input:radio[name=q3]:checked').val());
-        var q4 =Number($('input:radio[name=q4]:checked').val());
-        var q5 =Number($('input:radio[name=q5]:checked').val());
-        var q6 =Number($('input:radio[name=q6]:checked').val());
-        var q7 =Number($('input:radio[name=q7]:checked').val());
-        var q8 =Number($('input:radio[name=q8]:checked').val());
-        var q9 =Number($('input:radio[name=q9]:checked').val());
+        var qs1 =Number($('input:radio[name=q1]:checked').val());
+        var qs2 =Number($('input:radio[name=q2]:checked').val());
+        var qs3 =Number($('input:radio[name=q3]:checked').val());
+        var qs4 =Number($('input:radio[name=q4]:checked').val());
+        var qs5 =Number($('input:radio[name=q5]:checked').val());
+        var qs6 =Number($('input:radio[name=q6]:checked').val());
+        var qs7 =Number($('input:radio[name=q7]:checked').val());
+        var qs8 =Number($('input:radio[name=q8]:checked').val());
+        var qs9 =Number($('input:radio[name=q9]:checked').val());
 
-        var result = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9;
+        var result = qs1 + qs2 + qs3 + qs4 + qs5 + qs6 + qs7 + qs8 + qs9;
 
         if(result > 4) {
             swal({
               title: "Dementia!",
-              text: "Do not worry, you'll be fine!",
+              text: "Predicted Dementia, Consult Physician!",
               icon: "error",
               button: "Aww!",
             });
         } else {
             swal({
-              title: "Congratulations! " + fullName,
-              text: "You have no dementia!",
+              title: "You are probably ok! ",
+              text: "Not found Dementia!",
               icon: "success",
-              button: "Aww yiss!",
+              button: "yes!",
             });
         }
 
