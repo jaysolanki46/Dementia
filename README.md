@@ -2,7 +2,7 @@
 Dementia is not a specific disease. It is a general term that covers a set of related symptoms associated with a decline in memory, thinking, understanding, and judgment.
 
 ## 🎙 Introduction
-This web tool ask some quick questions to patient and then analyst the user's choices and provide the result whether patient has Dementia or not.
+This web tool asks some quick questions to the patient and then analyst the user's choices and provide the result whether the patient has Dementia or not.
 
 ## 📑 Features 
 - Very friendly and easy in use user interface
